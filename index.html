@@ -11,18 +11,44 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/x-icon" href="assets/logos/logo_small_ocean-guardians.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/default.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/video-section.css">
-
+    <link rel="stylesheet" href="styles/video-section.css"> 
+    <link rel="stylesheet" href="styles/path.css"> <!--(3) Seção tecnologias (J)-->
+    <link rel="stylesheet" href="styles/about-us.css">
+    <link rel="stylesheet" href="styles/path.css"> <!--(5) Seção público impactado (J)-->
+    <link rel="stylesheet" href="styles/path.css"> <!--(6) Seção benefícios/serviços (J)-->
+    <link rel="stylesheet" href="styles/path.css"> <!--(7) Seção review (J)-->
+    <link rel="stylesheet" href="styles/path.css"> <!--(8) Seção doação (J)-->
+    <link rel="stylesheet" href="styles/footer.css">
     <title>Ocean Guardians</title>
 </head>
 <body>
 
     <!--(1) Header / Home (K)-->
     <header>
+        <h3>Ocean Guardians</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Nossa missão</a></li>
+                <li><a href="#">Vídeo</a></li>
+                <li><a href="#">Listas</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#doacao">Doação</a></li>
+            </ul>
+        </nav>
+        <div class='toggle-language'></div>
+        <img src="assets/gota-esquerda-header.png" alt="Blue Top Left" class="gota-esquerda-header">
+        <figure class="header-container-drops">
+            <div>
+                <img src="assets/gota-direita-header.png" alt="Blue Bottom Right" class="gota-direita-header">
+                <img src="assets/gota-interna-direita-header.png" alt="Blue Bottom Middle Right" class="gota-interna-header">
+                <img src="assets/peixe-header.png" alt="Picture of a fish" class="animal-header">
+            </div>
+        </figure>
         <h3>Ocean Guardians</h1>
         <nav>
             <ul>
@@ -50,11 +76,18 @@
             <div class="header-buttons">
                 <a href="#" class="check-film-btn">Ver vídeo</a>
                 <a href="#" class="contact-us-btn">Contato</a>
+    <section class="header-content">
+        <div class="header-text-content">
+            <h1>We are Ocean Guardians</h1>
+            <p>Faça a escolha certa!</p>
+            <div class="header-buttons">
+                <a href="#" class="check-film-btn">Ver vídeo</a>
+                <a href="#" class="contact-us-btn">Contato</a>
             </div>
         </div>
     </section>
     <main>
-
+        <!--(2) Seção vídeo impactante (K)-->
         <section class="video-section" id='doacao'>
         <div class="video-container">
             <h1 class="video-title">Veja a realidade dos oceanos atualmente!</h1>
@@ -71,15 +104,31 @@
             </div>
         </section>
     </main>
-        <!--(2) Seção vídeo impactante (K)-->
         <!--(3) Seção tecnologias (J)-->
 
 
 
         <!--(4) Seção About Us (K)-->
-
-
-        
+        <div class="about-us">
+            <h1>Sobre Nós</h1>
+            <div class="content">
+                <img src="assets/Imgs/ocean-guardian_teamphoto.png" alt="Team Photo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt facere at adipisci necessitatibus quae ut repellendus asperiores, qui nam totam est ducimus iste corrupti voluptatem. 
+                <br>
+                <br>Nam id rerum, quisquam inventore aperiam dolores sequi asperiores, porro quidem molestias minus consequatur amet expedita harum dolor cum reiciendis iste. 
+                <br>
+                <br>Odio, corrupti fuga? Consequuntur ducimus voluptatum laboriosam nostrum dignissimos voluptate rem corrupti ut iure ad ea, incidunt tempora vel tenetur, dolores quas cupiditate, accusantium architecto accusamus praesentium?</p>
+            </div>
+            <div class="logos">
+                <img src="assets/logos/logo_aws.png" alt="Logo AWS">
+                <img src="assets/logos/logo_oceans20.png" alt="Logo Oceans20">
+                <img src="assets/logos/logo_rede_brasil.png" alt="Logo RedeBrasil">
+                <img src="assets/logos/logo_select.png" alt="Logo Select">
+                <img src="assets/logos/logo_softtek.png" alt="Logo Softtek">
+                <img src="assets/logos/logo_unesco.png" alt="Logo Unesco">
+                <img src="assets/logos/logo_usp.png" alt="Logo USP">
+            </div>
+        </div>
         <!--(5) Seção público impactado (J)-->
 
 
@@ -97,7 +146,49 @@
 
 
         <!--(9) Seção Footer (K)-->
-
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="assets/logos/logo_ocean-guardians.png" class="logo">
+                </div>
+                <div class="col">
+                    <h3>Mapa do Site</h3>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Nossa Missão</a></li>
+                        <li><a href="">Listas</a></li>
+                        <li><a href="">Notícias</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="">Sobre Nós</a></li>
+                        <li><a href="">Fale Conosco</a></li>
+                        <li><a href="">Carreiras</a></li>
+                        <li><a href="">Doação</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <i class="far fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="socialicons">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Ocean Guardians &copy; 2024 - Direitos Reservados</p>
+        </footer>
+    </body>
+    </html>
     
 </body>
 </html>
