@@ -10,6 +10,7 @@ body {
 }
 
 .video-section {
+    border: 1px solid red;
     margin-top: 1600px;
     position: relative;
     display: flex;

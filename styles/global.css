@@ -1,0 +1,10 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-grey: #393939;
+    --primary-blue: #4FA8DA;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--main-grey);
+}
