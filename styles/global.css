@@ -4,7 +4,14 @@
     --primary-blue: #4FA8DA;
 }
 
+html 
+{
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
+    font-family: "Poppins", sans-serif;
     color: var(--main-grey);
+    overflow-x: hidden;
 }
