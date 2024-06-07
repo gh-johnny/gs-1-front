@@ -4,47 +4,66 @@
     --primary-blue: #4FA8DA;
 }
 
-.benefits-container {
-    padding-top: 10rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2rem;
+@media(min-width: 0px) {
+    .benefits-container h2 {
+        padding-top: 10rem;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .benefits-container {
+        padding-inline: 10vw;
+    }
+
+    .benefits-card-big {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 100%;
+        padding: 1rem 2rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
 }
 
-.benefits-container h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: center;
-}
+@media(min-width: 1024px) {
+    .benefits-container {
+        padding-top: 10rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+    }
 
-.benefits-content-container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
+    .benefits-content-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
 
-.benefits-divisor-content {
-    display: flex;
-    column-gap: 1rem;
-}
+    .benefits-divisor-content {
+        display: flex;
+        column-gap: 1rem;
+    }
 
-.benefits-card-big {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    width: 30rem;
-    padding: 1rem 2rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+    .benefits-card-big {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 30rem;
+        padding: 1rem 2rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
 
-.benefits-card-big div {
-    border: 1px solid red;
-    width: fit-content;
-    background-color: #eb4034ee;
-}
+    .benefits-card-big div {
+        border: 1px solid red;
+        width: fit-content;
+        background-color: #eb4034ee;
+    }
 
-.benefits-card-big h3 {
-    font-weight: 600;
+    .benefits-card-big h3 {
+        font-weight: 600;
+    }
 }
