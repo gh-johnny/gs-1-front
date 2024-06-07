@@ -4,57 +4,53 @@
     --primary-blue: #4FA8DA;
 }
 
-footer{
+footer {
+    position: relative;
+    padding-top: 10rem;
     width: 100%;
     bottom: 0;
-    background-color: var(--primary-blue);
-    color: var(--main-white);
-    padding: 60px 0 30px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    line-height: 40px; 
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans";
-    box-sizing: border-box;
 }
-.row{
+
+.row {
     width: 95%;
-    margin: auto;
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
 }
-.col{
+
+.col {
     flex-basis: 25%;
     padding: 15px;
 }
-.col:nth-child(2), .col:nth-child(3){
+
+.col:nth-child(2),
+.col:nth-child(3) {
     flex-basis: 20%;
 }
-.logo{
+
+.logo {
     width: 200px;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
-.col h3{
+
+.col h3 {
     font-size: 30px;
     width: fit-content;
     margin-bottom: 30px;
     position: relative;
 }
-.col ul li{
+
+.col li {
     list-style: none;
-    
+
 }
-.col ul li a{
+
+.col a {
     font-size: 20px;
     text-decoration: none;
-    color: var(--main-white);
-    
+
 }
-form{
+
+footer form {
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -62,46 +58,71 @@ form{
     border-bottom: 1px solid var(--main-white);
     margin-bottom: 50px;
 }
-form .far{
+
+footer form .far {
     font-size: 18px;
     margin-right: 10px;
 }
-form input{
+
+footer form input {
     width: 100%;
     background: transparent;
-    color: var(--main-grey);
     border: 0;
     outline: none;
+    color: white;
 }
-form button{
+
+footer form input::placeholder {
+    color: white;
+}
+
+footer form button {
     background: transparent;
     border: 0;
     outline: none;
     cursor: pointer;
 }
-form button .fas{
+
+footer form button .fas {
     font-size: 16px;
-    color: var(--main-white);
 }
-.socialicons .fa-brands{
+
+.socialicons .fa-brands {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    color: #000;
     background: var(--main-white);
     margin-right: 15px;
     cursor: pointer;
 }
-hr{
+
+hr {
     width: 90%;
     border: 0;
     border-bottom: 1px solid var(--main-white);
     margin: 20px auto;
 }
-.copyright{
+
+.copyright {
     font-size: 20px;
     text-align: center;
+}
+
+
+.gota-footer {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+
+form img:nth-child(1) {
+    transform: translateX(-1rem);
+}
+
+form img {
+    width: 1.4rem;
 }
