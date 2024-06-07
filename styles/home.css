@@ -42,8 +42,9 @@
 
     .gota-mobile-baixo {
         position: absolute;
-        bottom: 10rem;
+        bottom: 14rem;
         width: 100%;
+        max-width: 556px;
     }
 
     .title-mobile {
@@ -56,13 +57,14 @@
     .title-mobile h1 {
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 8vw;
+        font-size: clamp(1rem, 0.1724rem + 7.1379vw, 2.5rem);
         line-height: 1.2;
         width: 100%;
     }
 
     .title-mobile p {
         font-size: 4vw;
+        font-size: clamp(1rem, 0.1724rem + 2vw, 2.5rem);
         padding-left: 8px;
         font-weight: 600;
     }
@@ -70,7 +72,7 @@
     .header-mobile-btns {
         position: absolute;
         left: 50%;
-        bottom: 5rem;
+        top: 45vh;
         z-index: 10;
         transform: translate(-50%, 0);
         display: flex;
@@ -78,14 +80,29 @@
     }
 
     .header-mobile-btns * {
-        padding: 2vw 3vw;
+        padding: 2.5vw 3.5vw;
         border: 1px solid var(--primary-blue);
         border-radius: 10px;
+        white-space: nowrap;
+        background-color: white;
+        height: fit-content;
     }
 
     .header-mobile-btns *:nth-child(1) {
         background-color: var(--primary-blue);
         color: white;
+        border: 1px solid white;
+    }
+}
+
+@media (min-width: 554px) {
+
+    .gota-mobile-baixo {
+        display: none;
+    }
+
+    .header-mobile-btns {
+        bottom: 24rem;
     }
 }
 
