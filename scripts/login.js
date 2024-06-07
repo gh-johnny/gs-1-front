@@ -44,3 +44,5 @@ function isAlreadyLogged(){
 }
 
 isAlreadyLogged()
+
+alert("Seja bem vindo!!")
