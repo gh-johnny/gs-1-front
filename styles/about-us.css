@@ -4,18 +4,11 @@
     --primary-blue: #4FA8DA;
 }
 
-body {
-    text-align: center;
-    background-color: #f0f0f0; 
-    margin: 0;
-    padding: 0;
-}
-
 .about-us {
     padding: 500px;
 }
 
-h1 {
+.about-us h2 {
     text-align: center;
     margin-top: 0;
     color: var(--primary-blue);
@@ -34,7 +27,6 @@ h1 {
     gap: 40px;
     text-align: left;
     align-items: center;
-    background-color: #f0f0f0; 
     color: var(--main-grey);
     padding: 20px;
     border-radius: 10px;
@@ -63,7 +55,6 @@ h1 {
     max-height: 130px; 
     margin: 10px;
     width: auto;
-    background-color: #f0f0f0; 
     padding: 10px; 
     border-radius: 5px;
 }

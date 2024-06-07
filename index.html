@@ -17,13 +17,17 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/video-section.css"> 
-    <link rel="stylesheet" href="styles/path.css"> <!--(3) Seção tecnologias (J)-->
+    <link rel="stylesheet" href="styles/slider.css"> <!--(3) Seção tecnologias (J)-->
     <link rel="stylesheet" href="styles/about-us.css">
     <link rel="stylesheet" href="styles/path.css"> <!--(5) Seção público impactado (J)-->
     <link rel="stylesheet" href="styles/path.css"> <!--(6) Seção benefícios/serviços (J)-->
     <link rel="stylesheet" href="styles/path.css"> <!--(7) Seção review (J)-->
     <link rel="stylesheet" href="styles/path.css"> <!--(8) Seção doação (J)-->
     <link rel="stylesheet" href="styles/footer.css">
+
+
+    <script src="scripts/slider.js" defer></script>
+
     <title>Ocean Guardians</title>
 </head>
 <body>
@@ -64,7 +68,7 @@
         <!--(2) Seção vídeo impactante (K)-->
         <section class="video-section" id='doacao'>
         <div class="video-container">
-            <h1 class="video-title">Veja a realidade dos oceanos atualmente!</h1>
+            <h2 class="video-title">Veja a realidade dos oceanos atualmente!</h2>
             <div class="background-assets">
                 <img src="assets/gota-esquerda-video.png" alt="Blue Top Left" class="gota-esquerda-video">
                 <img src="assets/gota-direita-video.png" alt="Blue Bottom Right" class="gota-direita-video">
@@ -78,13 +82,70 @@
             </div>
         </section>
     </main>
-        <!--(3) Seção tecnologias (J)-->
 
+        <!--(3) Seção tecnologias (J)-->
+        <section class="slider-container">
+            <h2>Nossas tecnologias</h2>
+            <div class="slider">
+                <figure class="slide">
+                    <div class="slide-content">
+                        <h3>01</h3>
+                        <p class="date">January 12, 2024</p>
+                        <p class="description">Limit your time playing with gadgets to maintain eye health</p>
+                        <img src="assets/Imgs/entusiasta_tech.png" alt="Slide 1">
+                    </div>
+                </figure>
+                <figure class="slide">
+                    <div class="slide-content">
+                        <h3>02</h3>
+                        <p class="date">January 12, 2024</p>
+                        <p class="description">Limit your time playing with gadgets to maintain eye health</p>
+                        <img src="assets/Imgs/entusiasta_tech.png" alt="Slide 2">
+                    </div>
+                </figure>
+                <figure class="slide">
+                    <div class="slide-content">
+                        <h3>03</h3>
+                        <p class="date">January 12, 2024</p>
+                        <p class="description">Limit your time playing with gadgets to maintain eye health</p>
+                        <img src="assets/Imgs/entusiasta_tech.png" alt="Slide 3">
+                    </div>
+                </figure>
+            </div>
+            <aside class="slider-button-container">
+                <button
+                    onmouseover="changeArrowColorOnMouseOver('left')" 
+                    onmouseout="changeArrowColorOnMouseOut('left')" 
+                    class="prev" 
+                    onclick="moveSlide(-1)"
+                >
+                    <img
+                        class="slider-arrow-left"
+                        src="assets/arrow-black.png" 
+                        alt="Arrow left"
+                    />
+                    <span>Prev</span>
+                </button>
+                <button 
+                    onmouseover="changeArrowColorOnMouseOver('right')" 
+                    onmouseout="changeArrowColorOnMouseOut('right')" 
+                    class="next" 
+                    onclick="moveSlide(1)"
+                >
+                    <span>Next</span>
+                    <img 
+                        class="slider-arrow-right"
+                        src="assets/arrow-black.png" 
+                        alt="Arrow right"
+                    />
+                </button>
+            </aside>
+        </section>
 
 
         <!--(4) Seção About Us (K)-->
         <div class="about-us">
-            <h1>Sobre Nós</h1>
+            <h2>Sobre Nós</h1>
             <div class="content">
                 <img src="assets/Imgs/ocean-guardian_teamphoto.png" alt="Team Photo">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt facere at adipisci necessitatibus quae ut repellendus asperiores, qui nam totam est ducimus iste corrupti voluptatem. 
