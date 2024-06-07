@@ -22,7 +22,6 @@
     .review-content-container {
         display: flex;
         justify-content: center;
-        padding-right: 15vw;
         column-gap: 20rem;
     }
 
@@ -39,8 +38,8 @@
     }
 
     .card-review:nth-child(1) {
-        transform: translateX(10rem);
-        margin-bottom: 2rem;
+        transform: translateX(0rem);
+        margin-bottom: 4rem;
     }
 
     .card-review>div {
@@ -79,6 +78,11 @@
         flex-direction: column;
         align-items: center;
         row-gap: 2rem;
+    }
+
+    .card-review:nth-child(1) {
+        transform: translateX(10rem);
+        margin-bottom: 2rem;
     }
 
     .review-content-container {
