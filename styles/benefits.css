@@ -57,9 +57,7 @@
     }
 
     .benefits-card-big div {
-        border: 1px solid red;
-        width: fit-content;
-        background-color: #eb4034ee;
+        width: 10rem;
     }
 
     .benefits-card-big h3 {
