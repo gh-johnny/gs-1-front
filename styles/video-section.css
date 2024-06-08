@@ -1,50 +1,81 @@
-.video-section {
-    margin-top: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+@media (min-width: 0px) {
+    .video-section {
+        margin-top: 24rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-title {
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .video-container {
+        position: relative;
+        width: 67%;
+        aspect-ratio: 16/9;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .background-assets {
+        display: none;
+    }
+
 }
 
-.video-title {
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: center;
+@media (min-width: 1024px) {
+    .video-section {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .background-assets {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-container {
+        position: relative;
+        width: 67%;
+        aspect-ratio: 16/9;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .video-container iframe {
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .gota-esquerda-video,
+    .gota-direita-video {
+        position: absolute;
+        width: 150px;
+        height: auto;
+    }
+
+    .gota-esquerda-video {
+        top: 40px;
+        left: -70px;
+    }
+
+    .gota-direita-video {
+        bottom: -40px;
+        right: -70px;
+    }
 }
 
-.video-container {
-    position: relative;
-    width: 67%;
-    aspect-ratio: 16/9;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-}
-
-.background-assets {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.video-container iframe {
-    position: relative;
-    border-radius: 10px;
-}
-
-.gota-esquerda-video, .gota-direita-video {
-    position: absolute;
-    width: 150px;
-    height: auto;
-}
-
-.gota-esquerda-video {
-    top: 40px;
-    left: -70px;
-}
-
-.gota-direita-video {
-    bottom: -40px;
-    right: -70px;
-}

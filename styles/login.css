@@ -1,0 +1,101 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-grey: #393939;
+    --primary-blue: #4FA8DA;
+}
+
+body {
+    background-color: #7bbde3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.card-form,
+.help-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    box-shadow: rgba(79, 168, 218, 0.4) 5px 5px, rgba(79, 168, 218, 0.3) 10px 10px, rgba(79, 168, 218, 0.2) 15px 15px, rgba(79, 168, 218, 0.1) 20px 20px, rgba(79, 168, 218, 0.05) 25px 25px;
+    border-radius: 10px;
+    padding: 3rem 0rem;
+}
+
+.card-form h1 {
+    font-size: 1.75rem;
+    padding-left: 1rem;
+}
+
+.card-form input {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--main-grey);
+    padding: .5rem 5px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.send {
+    background: var(--primary-blue);
+    color: white;
+    width: fit-content;
+    align-self: center;
+    padding: .7rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.card-form input:hover,
+.card-form input:focus,
+.card-form button:hover,
+.card-form button:focus {
+    border: 1px solid var(--main-grey);
+}
+
+.error-msg {
+    height: 20px;
+    color: #e02828;
+    padding-left: 1rem;
+}
+
+.help-box {
+    padding: 1rem;
+}
+
+.help-box h2 {
+    font-size: 1.2rem;
+}
+
+.pass-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin: 0 auto;
+}
+
+form input:nth-child(2),
+form div:nth-child(3) {
+    width: 90%;
+}
+
+.see-password {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+
+    top: 50%;
+    right: 1rem;
+    z-index: 999;
+    transform: translate(0%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/logos/logo_small_ocean-guardians.png">
+
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/video-section.css"> 
+    <link rel="stylesheet" href="styles/slider.css"> 
+    <link rel="stylesheet" href="styles/about-us.css">
+    <link rel="stylesheet" href="styles/publico.css">
+    <link rel="stylesheet" href="styles/benefits.css">
+    <link rel="stylesheet" href="styles/review.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/verify-auth.js" defer></script>
+
+    <title>Ocean Guardians</title>
+</head>
+<body>
+
+    <!--(0) Hamburger Menu-->
+    <section class="hamburger-menu-tela no-show">
+        <img 
+            class="hamburger-close" 
+            src="assets/icons/icon-close.png" 
+            alt="Exit"
+            onclick="hamburgerMenu()"
+        />
+        <ul>
+            <li><a onclick="hamburgerMenu()" href="#beneficios">Nossa missão</a></li>
+            <li><a onclick="hamburgerMenu()" href="#video">Vídeo</a></li>
+            <li><a onclick="hamburgerMenu()" href="#tecnologias">Tecnologias</aonclick></li>
+            <li><a onclick="hamburgerMenu()" href="#about-us">Sobre nós</a></li>
+        </ul>
+    </section>
+
+    <!--(1) Header / Home-->
+    <header>
+        <h3>Ocean Guardians</h1>
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="#beneficios">Nossa missão</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#about-us">Sobre nós</a></li>
+            </ul>
+        </nav>
+        <nav class="hamburger-menu" onclick="hamburgerMenu()">
+            <img src="assets/icons/icon-menu-hamburger.png" alt="Hamburger menu"/>
+        </nav>
+        <img 
+            src="assets/gota-esquerda-header.png" 
+            alt="Blue Top Left"
+            class="gota-esquerda-header"
+        >
+        <img 
+            src="assets/gota-mobile-cima.png" 
+            alt="Drop up top"
+            class="gota-mobile-cima"
+        >
+        <figure class="header-container-drops">
+            <div>
+                <img src="assets/gota-direita-header.png" alt="Blue Bottom Right" class="gota-direita-header">
+                <img src="assets/gota-interna-direita-header.png" alt="Blue Bottom Middle Right" class="gota-interna-header">
+                <img src="assets/peixe-header.png" alt="Picture of a fish" class="animal-header">
+            </div>
+        </figure>
+    </header>
+    <section class="title-mobile">
+            <h1>We are Ocean Guardians</h1>
+            <p>Faça a escolha certa!</p>
+    </section>
+    <div class="header-mobile-btns">
+        <a href="#" class="check-film-btn">Ver vídeo</a>
+        <a href="#" class="contact-us-btn">Contato</a>
+    </div>
+    <section class="header-content">
+        <div class="header-text-content">
+            <h1>We are Ocean Guardians</h1>
+            <p>Faça a escolha certa!</p>
+            <div class="header-buttons">
+                <a href="#" class="check-film-btn">Ver vídeo</a>
+                <a href="#" class="contact-us-btn">Contato</a>
+            </div>
+        </div>
+    </section>
+    <main>
+        <!--(2) Seção vídeo impactante-->
+        <section class="video-section" id='video'>
+        <div class="video-container">
+            <h2 class="video-title">Veja a realidade dos oceanos atualmente!</h2>
+            <div class="background-assets">
+                <img src="assets/gota-esquerda-video.png" alt="Blue Top Left" class="gota-esquerda-video">
+                <img src="assets/gota-direita-video.png" alt="Blue Bottom Right" class="gota-direita-video">
+            </div>
+                <iframe width="100%" height="100%" 
+                src="https://www.youtube.com/embed/Yomf5pBN8dY?si=O6aQ4OHuAHiLOFKF" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+        <!--(3) Seção tecnologias-->
+        <section id="tecnologias" class="slider-container">
+            <h2>Nossas <br/> tecnologias</h2>
+            <div class="slider">
+                <figure class="slide">
+                    <div class="slide-content">
+                        <h3>01</h3>
+                        <p class="date">January 12, 2024</p>
+                        <p class="description">Com os nossos sensores somos capazes de captar inúmeros dados</p>
+                        <img src="assets/Imgs/arduino-components.jpg" alt="Slide 1">
+                    </div>
+                </figure>
+                <figure class="slide">
+                    <div class="slide-content">
+                        <h3>02</h3>
+                        <p class="date">January 12, 2024</p>
+                        <p class="description">Nossos drones são equipados para escanear os mares</p>
+                        <img src="assets/Imgs/drone.png" alt="Slide 2">
+                    </div>
+                </figure>
+                <figure class="slide">
+                    <div class="slide-content">
+                        <h3>03</h3>
+                        <p class="date">January 12, 2024</p>
+                        <p class="description">Nosso app recebe essas informações na hora para você</p>
+                        <img src="assets/Imgs/beach-plastic-phone-photo.png" alt="Slide 3">
+                    </div>
+                </figure>
+            </div>
+            <aside class="slider-button-container">
+                <button
+                    onmouseover="changeArrowColorOnMouseOver('left')" 
+                    onmouseout="changeArrowColorOnMouseOut('left')" 
+                    class="prev" 
+                    onclick="moveSlide(-1)"
+                >
+                    <img
+                        class="slider-arrow-left"
+                        src="assets/arrow-black.png" 
+                        alt="Arrow left"
+                    />
+                    <span>Prev</span>
+                </button>
+                <button 
+                    onmouseover="changeArrowColorOnMouseOver('right')" 
+                    onmouseout="changeArrowColorOnMouseOut('right')" 
+                    class="next" 
+                    onclick="moveSlide(1)"
+                >
+                    <span>Next</span>
+                    <img 
+                        class="slider-arrow-right"
+                        src="assets/arrow-black.png" 
+                        alt="Arrow right"
+                    />
+                </button>
+            </aside>
+        </section>
+
+
+        <!--(4) Seção About Us-->
+        <div id="about-us" class="about-us">
+            <h2>Sobre Nós</h1>
+            <div class="content">
+                <img src="assets/Imgs/ocean-guardian_teamphoto.png" alt="Team Photo">
+                <p>
+                    - "O oceano é vital para o nosso bem-estar, e na Ocean Guardians, dedicamo-nos à sua preservação com soluções ecológicas. Nossa missão é combater a poluição, proteger a vida marinha e promover práticas sustentáveis. Acreditamos que um oceano saudável é uma responsabilidade compartilhada. Junte-se a nós para garantir um futuro vibrante para o nosso planeta azul."
+                </p>
+            </div>
+            <div class="logos">
+                <img src="assets/logos/logo_aws.png" alt="Logo AWS">
+                <img src="assets/logos/logo_oceans20.png" alt="Logo Oceans20">
+                <img src="assets/logos/logo_rede_brasil.png" alt="Logo RedeBrasil">
+                <img src="assets/logos/logo_select.png" alt="Logo Select">
+                <img src="assets/logos/logo_softtek.png" alt="Logo Softtek">
+                <img src="assets/logos/logo_unesco.png" alt="Logo Unesco">
+                <img src="assets/logos/logo_usp.png" alt="Logo USP">
+            </div>
+        </div>
+
+        <!--(5) Seção público impactado-->
+        <section class="publico-container">
+            <h2>Público Impactado</h2>
+            <div>
+                <figure class="publico-img-container">
+                    <img src="assets/Imgs/biologo-marinho_mar.jpg" alt="Fisher man"/>
+                    <p>
+                        <small>Dezembro 14, 2023</small>
+                        <span>- "Todos somos impactados, tanto em cima quanto em baixo da água"</span>
+                    </p>
+                </figure>
+                <section>
+                    <figure class="publico-img-container img-small">
+                        <img src="assets/Imgs/time-tech.jpg" alt="Fisher man"/>
+                        <p>
+                            <small>Setembro 29, 2022</small>
+                            <span>- "Os mais prejudicados nesse momento são a vida marítima local"</span>
+                        </p>
+                    </figure>
+                    <figure class="publico-img-container img-small">
+                        <img src="assets/Imgs/pescadores-praia.jpg" alt="Fisher man"/>
+                        <p>
+                            <small>Março 2, 2024</small>
+                            <span>- ""Nóis" é prejudicado sim, os pescadores vivem encontrando lixo"</span>
+                        </p>
+                    </figure>
+                </section>
+            </div>
+        </section>
+
+
+
+        <!--(6) Seção benefícios/serviços-->
+        <section id="beneficios" class="benefits-container">
+            <h2>Nossos Benefícios</h2>
+            <section class="benefits-content-container">
+                <div class="benefits-divisor-content">
+                    <section class="benefits-card-big">
+                        <div><img src="assets/icons/icon-drone.png" alt="Icon"/></div>
+                        <h3>Drones</h3>
+                        <p>Os nossos drones conseguem captar dados que servem para toda a população, seja você morador local ou ativista.</p>
+                    </section>
+                    <section class="benefits-card-big">
+                        <div><img src="assets/icons/icon-laptop_phone-app.png" alt="Icon"/></div>
+                        <h3>Aplicativo</h3>
+                        <p>Através de nosso aplicativo você consegue reportar avistamentos de lixo, e ter uma plataforma para visualizar os níveis de poluição local.</p>
+                    </section>
+                </div>
+                <div class="benefits-divisor-content">
+                    <section class="benefits-card-big">
+                        <div><img src="assets/icons/icon-money.png" alt="Icon"/></div>
+                        <h3>Baixo custo</h3>
+                        <p>Nossos drones compostos de placas arduíno são baratos de manter. O que significa que sempre teremos com sua ajuda um drone em sua região. </p>
+                    </section>
+                    <section class="benefits-card-big">
+                        <div><img src="assets/icons/icon-support.png" alt="Icon"/></div>
+                        <h3>Suporte</h3>
+                        <p>Nosso suporte 24/7 por Chatbot(IA) irá sanar suas dúvidas em relação aos drones e aplicativo. Também temos suporte humano para lhe auxiliar caso necessite.</p>
+                    </section>
+                </div>
+            </section>
+        </section>
+
+
+
+        <!--(7) Seção review -->
+        <section class="review-container">
+            <h2>Nossas Reviews</h2>
+            <section class="review-content-container">
+                <div class="review-left">
+                    <div class="bubble-wrapper bubble-1">
+                        <div class="bubble-icon">
+                            <img src="assets/icons/icon-chat-bubble.png" alt="Bubble speech icon"/>
+                        </div> 
+                    </div>
+                    <div class="bubble-wrapper bubble-2">
+                        <div class="bubble-icon">
+                            <img src="assets/icons/icon-chat-bubble.png" alt="Bubble speech icon"/>
+                        </div> 
+                    </div>
+
+                    <div class="review-small-left">
+                        <div>
+                            <p>App muito informativo!</p>
+                            <div class="review-profile-left">
+                                <img src="assets/Imgs/ocean-guardian_teamphoto.png" alt="Person icon"/>
+                                <img src="assets/icons/icon-checkmark.png" alt="Checkmark icon"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-small-left">
+                        <div>
+                            <p>Esse drone é demaaais!!!</p>
+                            <div class="review-profile-left">
+                                <img src="assets/Imgs/persona_marina_biologa.png" alt="Person icon"/>
+                                <img src="assets/icons/icon-checkmark.png" alt="Checkmark icon"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-small-left">
+                        <div>
+                            <p>Empresa boa é outro nível!!</p>
+                            <div class="review-profile-left">
+                                <img src="assets/Imgs/biologo_marinho.png" alt="Person icon"/>
+                                <img src="assets/icons/icon-checkmark.png" alt="Checkmark icon"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-right">
+                    <div>
+                        <section class="card-review">
+                            <div><img src="assets/Imgs/pescador.png" alt="Profile pic"/></div>
+                            <section>
+                                <img src="assets/icons/icon-star.png" alt="Star"/>
+                                <img src="assets/icons/icon-star.png" alt="Star"/>
+                                <img src="assets/icons/icon-star.png" alt="Star"/>
+                                <img src="assets/icons/icon-star.png" alt="Star"/>
+                                <img src="assets/icons/icon-half-star.png" alt="Star"/>
+                            </section>
+                            <p>
+                                Super feliz com essa aplicação. Parabéns aos envolvidos!
+                                <br>
+                                <small>Abril 14, 2024</small>
+                            </p>
+                            <span>Wellington Cidade</span>
+                        </section>
+                        <section class="card-review">
+                            <div><img src="assets/Imgs/entusiasta_tech.png" alt="Profile pic"/></div>
+                            <section>
+                                <img src="assets/icons/icon-star.png" alt="Star"/>
+                                <img src="assets/icons/icon-star.png" alt="Star"/>
+                                <img src="assets/icons/icon-star.png" alt="Star"/>
+                                <img src="assets/icons/icon-star.png" alt="Star"/>
+                                <img src="assets/icons/icon-half-star.png" alt="Star"/>
+                            </section>
+                            <p>
+                                O Arduíno no Drone foi muito bem integrado. Adorei!!
+                                <br>
+                                <small>Janeiro 11, 2023</small>
+                            </p>
+                            <span>Lucas Demetrius</span>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!--(9) Seção Footer-->
+        <footer>
+            <img class="gota-footer-mobile" src="assets/mobile-footer.png" alt="Water drop footer"/>
+            <img class="gota-footer" src="assets/giga-gota-direita-footer.png" alt="Gota"/>
+            <div class="row">
+                <div class="col">
+                    <img src="assets/logos/logo_inverted_ocean-guardians.png" class="logo">
+                    <img src="assets/logos/logo_ocean-guardians.png" class="logo-mobile">
+                </div>
+                <div class="col">
+                    <h3>Mapa do Site</h3>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Nossa Missão</a></li>
+                        <li><a href="">Listas</a></li>
+                        <li><a href="">Notícias</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="">Sobre Nós</a></li>
+                        <li><a href="">Fale Conosco</a></li>
+                        <li><a href="">Carreiras</a></li>
+                        <li><a href="">Doação</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <img src="assets/icons/icon-mail.png" alt="Icon mail"/>
+                        <input type="email" placeholder="Enter your email" required>
+                        <img src="assets/arrow-black.png" alt="Icon arrow"/>
+                        <button type="submit">
+                        </button>
+                    </form>
+                    <div class="socialicons">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Ocean Guardians &copy; 2024 - Direitos Reservados</p>
+        </footer>
+    </body>
+</html>
