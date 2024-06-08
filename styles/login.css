@@ -36,11 +36,11 @@ body {
     border: 1px solid transparent;
     border-bottom: 1px solid var(--main-grey);
     padding: .5rem 5px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
-.card-form button {
+.send {
     background: var(--primary-blue);
     color: white;
     width: fit-content;
@@ -61,6 +61,7 @@ body {
 .error-msg {
     height: 20px;
     color: #e02828;
+    padding-left: 1rem;
 }
 
 .help-box {
@@ -69,4 +70,32 @@ body {
 
 .help-box h2 {
     font-size: 1.2rem;
+}
+
+.pass-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin: 0 auto;
+}
+
+form input:nth-child(2),
+form div:nth-child(3) {
+    width: 90%;
+}
+
+.see-password {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+
+    top: 50%;
+    right: 1rem;
+    z-index: 999;
+    transform: translate(0%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }

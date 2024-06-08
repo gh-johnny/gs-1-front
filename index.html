@@ -21,8 +21,16 @@
     <form action='' class="card-form">
         <h1>Login</h1>
         <input type="email" placeholder="Email" onfocus="focusInput()"/>
-        <input type="password" placeholder="Senha" onfocus="focusInput()"/>
-        <button type="button" onclick="sendForm()">Acessar</button>
+        <div class="pass-wrapper">
+            <input type="password" placeholder="Senha" onfocus="focusInput()"/>
+            <img
+                class="see-password"
+                onclick="seePassword()" 
+                src="assets/icons/icon-eye-off.png" 
+                alt="Eye"
+            />
+        </div>
+        <button class="send" type="button" onclick="sendForm()">Acessar</button>
         <span class="error-msg"></span>
     </form>
 
