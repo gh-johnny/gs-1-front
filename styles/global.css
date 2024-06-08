@@ -4,9 +4,7 @@
     --primary-blue: #4FA8DA;
 }
 
-html 
-{
-    scroll-behavior: smooth;
+html {
     overflow-x: hidden;
 }
 

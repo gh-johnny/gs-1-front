@@ -25,10 +25,27 @@
     <link rel="stylesheet" href="styles/footer.css">
 
     <script src="scripts/slider.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
 
     <title>Ocean Guardians</title>
 </head>
 <body>
+
+    <!--(0) Hamburger Menu-->
+    <section class="hamburger-menu-tela no-show">
+        <img 
+            class="hamburger-close" 
+            src="assets/icons/icon-close.png" 
+            alt="Exit"
+            onclick="hamburgerMenu()"
+        />
+        <ul>
+            <li><a onclick="hamburgerMenu()" href="#beneficios">Nossa missão</a></li>
+            <li><a onclick="hamburgerMenu()" href="#video">Vídeo</a></li>
+            <li><a onclick="hamburgerMenu()" href="#tecnologias">Tecnologias</aonclick></li>
+            <li><a onclick="hamburgerMenu()" href="#about-us">Sobre nós</a></li>
+        </ul>
+    </section>
 
     <!--(1) Header / Home-->
     <header>
@@ -41,7 +58,8 @@
                 <li><a href="#about-us">Sobre nós</a></li>
             </ul>
         </nav>
-        <nav class="hamburger-menu">
+        <nav class="hamburger-menu" onclick="hamburgerMenu()">
+            <img src="assets/icons/icon-menu-hamburger.png" alt="Hamburger menu"/>
         </nav>
         <img 
             src="assets/gota-esquerda-header.png" 
